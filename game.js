@@ -5,6 +5,8 @@ var gamePattern = []; //Empty array for button pattern
 var keydownTimes = 0; //Count number of Keydown done
 var level = 0; //Level of the game
 
+var testing;
+
 $(document).keydown(function() {
   while (keydownTimes === 0) {
     keydownTimes++;
@@ -45,7 +47,7 @@ $(".btn").click(function(event) { //To identify button clicked and check the ans
           //Restart Game;
           keydownTimes = 0;
           level = 0;
-          userClickedPaddttern = [];
+          userClickedPattern = [];
           gamePattern = [];
         }
       })
